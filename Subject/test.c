@@ -2,7 +2,7 @@
 
 int main(void)
 {
-  int score1,score2,score3; //score
+  int score1,score2,score3; //scoreㅇㅇㅇㅇㅇ
   char name[50]; //name
   
   //file readㅇㅇㅇㅇ
