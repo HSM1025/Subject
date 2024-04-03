@@ -2,18 +2,22 @@
 
 int main(void)
 {
-  int a,b,c;
-  char name[50];
+  int score1,score2,score3; //score
+  char name[50]; //name
+  
+  //file readㅇㅇㅇㅇ
   FILE* fp = fopen("sj.txt", "r");
   fscanf(fp,"%[^\n]", name);
-  fscanf(fp, "%d %d %d", &a,&b,&c);
+  fscanf(fp, "%d %d %d", &score1,&score2,&score3);
   fclose(fp);
   
+  //print
   printf("%s\n", name);
-  printf("%d %d %d", a, b, c);
+  printf("%d %d %d", score1, score2, score3);
   
+  //file write
   fp = fopen("sj1.txt", "w");
-  fprintf(fp, "%d", (a+b+c)/3);
+  fprintf(fp, "%d", (score1+score2+score3)/3);
   fclose(fp);
   return 0;
 }
